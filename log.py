@@ -3,12 +3,25 @@ from ConnectDB import ConnectDB
 from beautifultable import BeautifulTable
 import re
 
-def redo():
+started = []
+commited = []
 
+def redo():
+    print()
 def criaTabela():
+    print()
 
 def pre_process():
+    print()
 
+def valorVariaveis():
+    print()
+
+def insertFirst():
+    print()
+
+def find_start():
+    print()
   
 def main():
     file = open('t.txt', 'r') 
@@ -24,6 +37,7 @@ def main():
     for idx in range(len(lines)):
         if lines[idx] == '':
             ins = idx
+            insertFirst(lines, idx)
             break
     
     lines = lines[ins+1::]
@@ -45,5 +59,6 @@ def main():
         else:
             print(c, 'Não Realizou Redo')
 
+    valorVariaveis()
      
 main()
